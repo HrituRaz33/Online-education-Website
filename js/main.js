@@ -14,6 +14,7 @@ $(document).ready(function () {
         else {
             $('header').removeClass('header-active');
         }
+
         $('section').each(function () {
             var top = $(window).scrollTop();
             var id = $(this).attr('id');
@@ -23,7 +24,7 @@ $(document).ready(function () {
                 $('.navbar ul li a').removeClass('active');
                 $('.navbar').find('[href="#' + id + '"]').addClass("active")
             }
-        })
-    })
+        });
+    });
 
 })
